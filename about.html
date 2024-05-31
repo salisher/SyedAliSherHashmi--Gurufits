@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css222.css">
+    <style>
+      /* Custom CSS for the Navbar */
+      .navbar-custom {
+          background-color: rgb(46, 41, 41); /* Fully transparent background */
+      }
+      .navbar-custom .navbar-brand,
+      .navbar-custom .nav-link {
+          color: black; /* Black text color */
+      }
+      .navbar-custom .nav-link:hover {
+          color: gray; /* Gray on hover */
+      }
+      .navbar-toggler {
+          border-color: rgba(0, 0, 0, 0.1); /* Light border color for the toggle icon */
+      }
+      .menu-icon {
+          display: none;
+          cursor: pointer;
+      }
+      .menu-icon div {
+          width: 25px;
+          height: 3px;
+          background-color: black;
+          margin: 4px 0;
+      }
+      .popup-menu {
+          display: none;
+          position: absolute;
+          top: 60px;
+          right: 10px;
+          background-color: white;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          z-index: 1000;
+      }
+      .popup-menu a {
+          display: block;
+          padding: 10px 20px;
+          color: black;
+          text-decoration: none;
+      }
+      .popup-menu a:hover {
+          background-color: #ddd;
+      }
+      @media (max-width: 768px) {
+          .navbar-nav {
+              display: none !important;
+          }
+          .menu-icon {
+              display: block;
+          }
+          .popup-menu {
+              display: none;
+          }
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">
+      <img src="guru fit logo (green and black).jpg" alt="Brand Logo" style="height: 100px ; width: 140px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home2.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="classes.html">Classes</a>
+          </li>
+      </ul>
+    </div>
+    <div class="menu-icon" onclick="togglePopupMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup-menu" id="popupMenu">
+      <a href="home2.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="classes.html">Classes</a>
+    </div>
+  </nav>
+
+    <div id="about-container" class="full-page-container">
+        <div id="image-container" class="image-container">
+          <img id="about-image" src="about.jpg" alt="About Us" class="fade-in">
+          <div class="text-overlay">
+            <h1 class="about-heading">GuruFits</h1>
+            <p class="about-paragraph">Your ultimate fitness destination, where expert guidance meets personalized programs. We are dedicated to helping you achieve your wellness goals in a supportive and energizing environment.
+               Join us to elevate your fitness journey with tailored workouts and a team of committed professionals.</p>
+          </div>
+        </div>
+      </div>
+      <!--  team -->
+      <!-- Team Section Start -->
+<div class="team-section" id="team">
+  <div class="team-member fade-in">
+    <img src="eva.jpg" alt="Person 1">
+    <div class="description">
+      <h2>Eva</h2>
+      <p>Eva is the dedicated General Manager who ensures the gym operates efficiently and provides exceptional member experiences.</p>
+    </div>
+  </div>
+  <div class="team-member fade-in">
+    <img src="john.jpg" alt="Person 2">
+    <div class="description">
+      <h2>John</h2>
+      <p>John is the enthusiastic Fitness Manager who develops and oversees our innovative fitness programs and personal training services.</p>
+    </div>
+  </div>
+  <div class="team-member fade-in">
+    <img src="emilie.jpg" alt="Person 3">
+    <div class="description">
+      <h2>Emilie</h2>
+      <p>
+        Emilie: A top-notch salesperson, expertly attracting and retaining members with personalized service and effective membership solutions.</p>
+    </div>
+  </div>
+</div>
+<!-- Team Section End -->
+
+<script src="script.js"></script>
+
+       <!-- Testimonials Section -->
+   <!-- Testimonials Section -->
+   <div class="testimonials-container container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="testimonial">
+          <img src="person1.jpg" alt="John Doe" class="testimonial-img">
+          <p>"This is the best gym I have ever used. Highly recommend!"</p>
+          <p>- John Doe</p>
+          <p class="rating">★★★★★</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <img src="person2.jpg" alt="Jane Smith" class="testimonial-img">
+          <p>"Amazing equipment and fantastic customer support."</p>
+          <p>- Jane Smith</p>
+          <p class="rating">★★★★★</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <img src="person3.jpg" alt="Mary " class="testimonial-img">
+          <p>"I am extremely satisfied with my experience. Five stars!"</p>
+          <p>- Mary Johnson</p>
+          <p class="rating">★★★★★</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- conatct us -->
+  <div class="container-contact">
+    <h1>Contact Us</h1>
+    <p>Phone: <a href="tel:YOUR_PHONE_NUMBER">07457778777</a></p>
+    <p>Email: <a href="mailto:YOUR_EMAIL_ADDRESS">gurugits@gmail.com</a></p>
+</div>
+
+</div>
+<div class="feedback-container">
+  <div class="feedback-form">
+      <h2>Feedback</h2>
+      <form id="feedbackForm" onsubmit="submitForm(event)">
+          <div class="form-group">
+              <label for="feedback-name">Your Name:</label>
+              <input type="text" id="feedback-name" name="feedback-name" class="form-control" required>
+          </div>
+          <div class="form-group">
+              <label for="feedback-email">Your Email:</label>
+              <input type="email" id="feedback-email" name="feedback-email" class="form-control" required>
+          </div>
+          <div class="form-group">
+              <label for="feedback-message">Your Feedback:</label>
+              <textarea id="feedback-message" name="feedback-message" class="form-control" required></textarea>
+          </div>
+          <div class="form-group">
+              <button type="submit" class="btn btn-primary submit-button">Submit Feedback</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+<script>
+  function submitForm(event) {
+      event.preventDefault(); // Prevents the default form submission
+      alert('Form submitted!'); // Display alert
+      // You can add additional code here to handle form submission, like sending data to a server using AJAX
+  }
+</script>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<div class="sponsors">
+  <h2>Our Sponsors</h2>
+  <div class="sponsor">
+    <img src="jd logo.jpg" alt="Sponsor 1">
+    <p class="sponsor-name">JD</p>
+  </div>
+  <div class="sponsor">
+    <img src="addidas logo.png" alt="Sponsor 2">
+    <p class="sponsor-name">Adidias</p>
+  </div>
+  <div class="sponsor">
+    <img src="nike logo.png" alt="Sponsor 3">
+    <p class="sponsor-name">Nike</p>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+   <script>
+// popup menu
+      function togglePopupMenu() {
+          var menu = document.getElementById("popupMenu");
+          if (menu.style.display === "block") {
+              menu.style.display = "none";
+          } else {
+              menu.style.display = "block";
+          }
+      }
+     </script>
+      <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <a href="about.html">
+                <button class="fMenuButton">Home</button>
+                </a>
+           
+            </div>
+            <div class="footerMenu">
+                <a href="contact.html">
+                <button class="fMenuButton">About Us</button>
+                </a>
+             
+            </div>
+            <div class="footerMenu">
+                <a href="#nav">
+                <button class="fMenuButton">Classes/Services</button>
+                </a>
+              
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Subscribe to GuruFits</h1>
+                    <div class="fMail">
+                        <input type="email" id="emailInput" placeholder="your@email.com" class="fInput">
+          
+                    </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="fb icon.png" alt="" class="fIcon">
+                    <img src="ig icon.jpg" alt="" class="fIcon">
+                    <img src="twitter icon.png" alt="" class="fIcon">
+                    <img src="whatsapp icon.jpg" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@hodstar. All rights reserved. 2024.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

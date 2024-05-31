@@ -1,0 +1,629 @@
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set video container to full viewport height */
+    overflow: hidden;
+  }
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+  }
+  .video-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Ensures the font is bold */
+    font-size: 48px; /* Makes the font large; adjust as needed */
+    color: white; /* Sets the font color to white */
+    text-align: center; /* Centers the text */
+}
+.join-now-button-home {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(1, 145, 1);
+  color: rgb(0, 0, 0);
+  border: none;
+  width: 70px;  /* Adjust the width to a comfortable size */
+  height: 30px; /* Adjust the height to a comfortable size */
+  font-size: 10px; /* Smaller font size */
+  cursor: pointer;
+  border-radius: 5px; /* Slightly increase the border radius */
+  padding: 5px 10px; /* Increase padding for better spacing */
+  transition: background-color 0.3s; /* Smooth transition effect for background color change */
+}
+
+.join-now-button-home:hover {
+  background-color: rgb(0, 100, 0); /* Dark green color on hover */
+}
+
+.join-now-button-home:active {
+  background-color: rgb(0, 70, 0); /* Even darker green color when clicked */
+}
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid darkgreen;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    color: darkgreen;
+  }
+  
+  .form-container input[type=text], .form-container input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+  }
+  
+  .form-container input[type=submit] {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .form-container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form-container .cancel {
+    background-color: #f44336;
+  }  
+  /* section heading */
+
+  /* locations of gyms */
+  /* CSS for Flexboxes */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #333; /* Dark grey background */
+  padding: 20px;
+}
+
+.flex-item {
+  flex: 0 0 30%; /* Three columns */
+  margin: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); /* White with transparency */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.heading.London {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+  /* memberships */
+  .membership-container {
+    display: flex;
+    justify-content: start; /* Aligns items to the start */
+    overflow-x: auto;
+    background-color: black;
+    padding: 60px 20px;  /* Increased padding for more prominence */
+    border-top: 5px solid green;  /* Unique top border */
+    border-bottom: 5px solid green;  /* Unique bottom border */
+  }
+  
+  .membership-box {
+    flex: 0 0 30%;  /* Only three boxes visible at a time */
+    margin-right: 10px;
+    background-color: white;  /* Changed background color to white */
+    color: grey;  /* Changed text color to grey */
+    padding: 20px;
+    border: 2px solid green;  /* Unique border around each box */
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px;  /* Ensures box is large enough */
+  }
+  
+  .membership-heading {
+    font-size: 1.75rem;  /* Slightly larger font size */
+    color: darkgreen;
+    margin-bottom: 10px;
+    font-weight: bold;  /* Make font bold */
+  }
+  
+  .membership-price {
+    font-size: 1.5rem;  /* Slightly larger font size */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: grey;  /* Changed text color to grey */
+  }
+  
+  .join-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;  /* font bold */
+  }
+  
+  
+  .join-btn:hover {
+    background-color: darkgreen;
+  }
+  
+  
+  /* sign in  */
+
+  
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.sign-in-container {
+    width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-control {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-dark-green {
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-dark-green:hover {
+    background-color: #004d00;
+}
+
+.privacy-policy {
+    margin-right: 5px;
+}
+  
+ 
+
+  
+/* Contact us */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+  /* about */
+  .full-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  #about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+    animation-delay: 2s; /* Delay before the fade-in animation starts */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background for better text readability */
+    border-radius: 10px;
+  }
+  
+  .about-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    margin: 0;
+  }
+  
+  .about-paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  /* team */
+  /* Team Section Styles */
+.team-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 50px 0;
+}
+
+.team-member {
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: black;
+  padding: 40px;
+  width: 30%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.team-member img {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.description h2 {
+  font-size: 1.8em;
+}
+
+.description p {
+  font-size: 1.2em;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  /* testamonials */
+  /* Testimonials Section */
+  .testimonials-container {
+    text-align: center;
+    padding: 50px 0;
+  
+  }
+  
+  .testimonial {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
+    width: 90%; /* Increased width */
+    max-width: 400px; /* Maximum width */
+    height: 300px; /* Height remains the same */
+  }
+  
+  
+  .testimonial img.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+  }
+  
+  .rating {
+    font-size: 1.2em;
+    color: #ffc107; /* Gold color for stars */
+  }
+  /* Contact us */
+.container-contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+/* feedbck */
+.feedback-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.feedback-container .feedback-form {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container .form-group {
+  margin-bottom: 20px;
+}
+
+.feedback-container .form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.feedback-container .form-group textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.feedback-container .form-group .submit-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 7%;
+  cursor: pointer;
+}
+
+.feedback-container .form-group .submit-button:hover {
+  background-color: #45a049;
+}
+/* sponsors contact us */
+.sponsors {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sponsor {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.sponsor img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sponsor-name {
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* classes */
+ /* Full Image Section */
+#full-image-section {
+  height: 100vh;
+  background-image: url('classes.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image-overlay1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.unique-heading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+}
+
+/* Image Grid Section */
+/* Full Image Section */
+#full-image-section {
+  height: 100vh;
+  background-image: url('classes.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image-overlay1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.unique-heading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  color: white;
+}
+
+/* Image Grid Section */
+/* Full Image Section */
+#full-image-section {
+  height: 100vh;
+  background-image: url('classes.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image-overlay1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.unique-heading {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  color: white;
+}
+
+/* Image Grid Section */
+#image-grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.image-description {
+  border: 2px solid green;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  border-radius: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.image-description img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.image-description h2, .image-description p {
+  color: grey;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure the navbar content is centered */
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-item {
+  margin: 0 15px; /* Adjust spacing between nav items if needed */
+}
